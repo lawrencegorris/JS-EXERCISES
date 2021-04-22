@@ -12,11 +12,10 @@
 (function() {
 
   let answer = prompt("Welcome, would you like some cake?");
-
-  if (answer == "yes" || "Yes" || "Amai nog ni" || "Absolutely"){
-    alert("Congratulations, you get some cake!");
-  }else {
-    alert("More cake for me then :p!");
+  if (answer === "yes" ||answer === "Yes" || answer === "Amai nog ni"){
+   alert("Congratulations, you get some cake");
+  }else{
+    alert("More cake for me then :p");
   }
 
 })();
