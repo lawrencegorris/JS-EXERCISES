@@ -12,14 +12,20 @@
 (function() {
 
     let target = document.querySelector('#target');
-    let currentHours = new Date().getHours();
-    let currentMinutes = new Date().getMinutes();
+    let currentHours = new Date.now().getHours();
+    let currentMinutes = new Date.now().getMinutes();
+    let Time = currentHours+currentMinutes;
 
     console.log(currentHours.toString() + currentMinutes.toString());
 
-    if (currentHours <= 17 && currentMinutes <= 30){
-        target.innerHTML = "Hello";
-    }else {
-        target.innerHTML = "Good evening";
+    function showTime(){
+        if (currentHours <= 17 && currentMinutes <= 30){
+            target.innerHTML = "Hello";
+        }else {
+            target.innerHTML = "Good evening";
+        }
     }
+
+    showTime();
+
 })();

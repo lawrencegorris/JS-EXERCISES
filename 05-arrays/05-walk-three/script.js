@@ -39,6 +39,14 @@
         },
     ];
 
-    // your code here
+    let run = document.querySelector('#run');
+
+    run.addEventListener('click', function (){
+        people.forEach(function(){
+            return people.firstname;
+    })
+
+
+    })
 
 })();

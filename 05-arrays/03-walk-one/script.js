@@ -26,6 +26,12 @@
         "cherry",
     ];
 
-    // your code here
+    let run = document.querySelector('#run');
+
+    run.addEventListener('click', function(){
+        for (i=0;i<fruits.length;i++){
+            console.log(fruits[i]);
+        }
+    })
 
 })();
