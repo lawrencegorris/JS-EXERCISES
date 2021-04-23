@@ -10,9 +10,10 @@
 // You will have time to focus on it later.
 
 (function() {
+    let target = document.querySelector('#target')
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    let currentDate = new Date();
+    let dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
 
-    // your code here
-
+    target.innerHTML = currentDate.toLocaleDateString('en-GB', dateOptions);
 })();
