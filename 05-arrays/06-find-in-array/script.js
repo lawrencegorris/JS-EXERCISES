@@ -89,6 +89,15 @@
         },
     ];
 
-    // your code here
+    let run = document.querySelector('#run');
+
+    run.addEventListener('click', function(){
+        let person = people.find(function (findPerson){
+            return findPerson === "Jean";
+        });
+        console.log(person);
+    })
+
+
 
 })();
