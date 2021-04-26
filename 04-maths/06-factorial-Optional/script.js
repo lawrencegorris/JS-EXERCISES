@@ -18,10 +18,11 @@
         // your code here
         let factorial = 1;
         let number = document.querySelector('#number').value;
+
         for (i = 1; i <= number; i++){
             factorial *= i;
         }
-        console.log(factorial)
+        console.log(factorial);
 
     });
 
