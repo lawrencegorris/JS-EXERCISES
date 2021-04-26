@@ -89,15 +89,19 @@
         },
     ];
 
-    let run = document.querySelector('#run');
-
-    run.addEventListener('click', function(){
-        let person = people.find(function (findPerson){
-            return findPerson === "Jean";
+    /*lementById('run').addEventListener('click', () => {
+        const person = people.find((el) => {
+            return el.firstname === 'Jean' && el.lastname === 'Dupont';
         });
-        console.log(person);
-    })
+        console.log(person.email);
+        console.log(people.indexOf(person));
+    });*/
+
+    let run = document.querySelector('#run');
+    run.addEventListener('click', execute);
+    function execute(){
 
 
+    }
 
 })();

@@ -28,5 +28,11 @@
         "cerise",
     ];
 
-    // your code here
+    let run = document.querySelector('#run');
+    run.addEventListener('click', execute);
+    function execute(){
+        const uniqueItems = new Set(fruits);
+        const setToArray = [...uniqueItems];
+        console.log(setToArray);
+    }
 })();

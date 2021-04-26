@@ -89,6 +89,15 @@
         },
     ];
 
-    // your code here
+    const run = document.querySelector('#run');
+
+    run.addEventListener('click', execute);
+
+    function execute(){
+        const totalAges = people.reduce(function(sum, person){
+                return sum + person.age;
+            }, 0);
+        console.log(totalAges);
+    }
 
 })();
