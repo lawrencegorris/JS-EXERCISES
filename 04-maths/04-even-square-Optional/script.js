@@ -14,6 +14,12 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
+        for(let i = 1; i <= 21; i++){
+            if(Math.sqrt(i)){
+                console.log(i)
+            };
+
+        }
 
     });
 
