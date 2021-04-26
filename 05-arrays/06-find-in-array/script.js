@@ -89,19 +89,14 @@
         },
     ];
 
-    /*lementById('run').addEventListener('click', () => {
-        const person = people.find((el) => {
-            return el.firstname === 'Jean' && el.lastname === 'Dupont';
-        });
-        console.log(person.email);
-        console.log(people.indexOf(person));
-    });*/
-
     let run = document.querySelector('#run');
     run.addEventListener('click', execute);
     function execute(){
-
-
-    }
+        let person = people.find(function(element){
+            return element.firstname === 'Jean' && element.lastname === 'Dupont';
+        });
+        console.log(person.email);
+        console.log(people.indexOf(person));
+    };
 
 })();
