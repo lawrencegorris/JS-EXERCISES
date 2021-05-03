@@ -12,5 +12,19 @@
 (function() {
 
     // your code here
+    const validity = document.querySelector('#validity');
+    const password = document.querySelector('#pass-one');
+    let regex = /\d{2}/g;
 
+    password.setAttribute('minlength', '8');
+    password.setAttribute('pattern', '[0-9]{2}');
+
+    password.addEventListener('input', checkInput);
+    function checkInput(){
+        if((password.value).length >= 8 && (password.value).match(matchRule)){
+            validity.innerHTML = 'ok';
+        }else {
+            validity.innerHTML = 'Not ok';
+        }
+    }
 })();
