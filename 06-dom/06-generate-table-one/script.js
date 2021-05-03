@@ -12,5 +12,23 @@
 (function() {
 
     // your code here
+    const target = document.querySelector('#target');
+    const table = document.createElement('table');
+
+    table.setAttribute('border', '1');
+
+    for(let i = 0; i < 10; i++){
+        let tr = document.createElement('tr');
+        for(let j = 0; j < 1; j++){
+            let td = document.createElement('td');
+            tr.appendChild(td);
+            td.innerHTML = 'just some filler';
+        }
+        table.appendChild(tr);
+    }
+    
+    target.appendChild(table);
+    
+
 
 })();
