@@ -12,9 +12,8 @@
 (function() {
 
     // your code here
-    const source = document.querySelector('#source');
     const target = document.querySelector('#target');
     const img = document.createElement('img');
-    img.src = source.getAttribute('data-image');
+    img.src = document.querySelector('#source').getAttribute('data-image');
     target.appendChild(img);
 })();
