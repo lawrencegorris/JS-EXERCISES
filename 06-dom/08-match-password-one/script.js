@@ -12,5 +12,15 @@
 (function() {
 
     // your code here
+    const passOne = document.querySelector('#pass-one');
+    const passTwo = document.querySelector('#pass-two');
+    const run = document.querySelector('#run').addEventListener('click', function CheckPasswords(){
+        if(passOne.value === passTwo.value){
+            console.log('test');
+        }else {
+            passOne.style.borderColor = "red";
+            passTwo.style.borderColor = "red";
+        }
+    });
 
 })();
