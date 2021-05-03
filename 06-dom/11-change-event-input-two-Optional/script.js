@@ -21,7 +21,7 @@
 
     password.addEventListener('input', checkInput);
     function checkInput(){
-        if((password.value).length >= 8 && (password.value).match(matchRule)){
+        if((password.value).length >= 8 && (password.value).match(regex)){
             validity.innerHTML = 'ok';
         }else {
             validity.innerHTML = 'Not ok';
