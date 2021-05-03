@@ -12,5 +12,17 @@
 (function() {
 
     // your code here
+    let counter = document.querySelector('#counter');
+    let password = document.querySelector('#pass-one');
 
+    password.addEventListener('input', checkInput);
+
+    function checkInput (){
+        if((password.value).length <= 10){
+            password.setAttribute('maxlength', '10');
+        }else {
+            password.removeAttribute('maxlength', '10');
+        }
+        counter.innerHTML = ((password.value).length + '/10');
+    };
 })();
