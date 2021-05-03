@@ -14,13 +14,19 @@
     // your code here
     const passOne = document.querySelector('#pass-one');
     const passTwo = document.querySelector('#pass-two');
-    const run = document.querySelector('#run').addEventListener('click', function CheckPasswords(){
+    const run = document.querySelector('#run');
+    
+    run.addEventListener('click', checkPasswords)
+
+    function checkPasswords(){
         if(passOne.value === passTwo.value){
-            console.log('test');
+            console.log('All good');
+            passOne.classList.remove('error');
+            passTwo.classList.remove('error');
         }else {
             passOne.classList.add('error');
             passTwo.classList.add('error');
         }
-    });
+    }
 
 })();
