@@ -19,4 +19,10 @@
         status: "married",
     };
     // your code here
+    const run = document.querySelector('#run');
+    run.addEventListener('click', showObject);
+    function showObject (){
+        console.log(Object.keys(person));
+        console.log(Object.values(person));
+    }
 })();
